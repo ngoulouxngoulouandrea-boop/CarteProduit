@@ -1,0 +1,209 @@
+/* =========================
+   RESET CSS
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   STYLES GÉNÉRAUX
+========================= */
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background-color: #2E8B57;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    margin-bottom: 15px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* =========================
+   SECTION PRODUITS
+========================= */
+
+.products{
+    max-width: 1100px;
+    margin: 40px auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   CARTE PRODUIT
+========================= */
+
+.card{
+    width: 300px;
+    background: white;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+
+    transition: .3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,.25);
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.badge{
+    display: inline-block;
+
+    margin: 15px;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    color: white;
+    font-size: .8rem;
+}
+
+.stock{
+    background: #28a745;
+}
+
+.promo{
+    background: #dc3545;
+}
+
+/* =========================
+   CONTENU
+========================= */
+
+.card-content{
+    padding: 20px;
+}
+
+.card-content h2{
+    margin-bottom: 10px;
+}
+
+.card-content p{
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* =========================
+   ÉTOILES
+========================= */
+
+.rating{
+    color: gold;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* =========================
+   PRIX
+========================= */
+
+.price{
+    margin-bottom: 20px;
+}
+
+.old-price{
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 10px;
+}
+
+.new-price{
+    color: #2E8B57;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* =========================
+   BOUTONS
+========================= */
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.buttons button:first-child{
+    background: #2E8B57;
+    color: white;
+}
+
+.buttons button:last-child{
+    background: #eeeeee;
+}
+
+.buttons button:hover{
+    opacity: .8;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    margin-top: 40px;
+    background: #2E8B57;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+

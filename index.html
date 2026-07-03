@@ -1,11 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GreenShop - Boutique de produits écologiques">
+    <title>GreenShop | Nos Produits</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <h1>GreenShop</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Produits</a></li>
+                <li><a href="#">Promotions</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+        <section class="products">
+
+            <!-- ================= CARD 1 ================= -->
+            <article class="card">
+                <span class="badge stock">
+                    <i class="ri-checkbox-circle-fill"></i> En stock
+                </span>
+                <img src="images/smartphone.jpg" alt="Smartphone écologique">
+                <div class="card-content">
+                    <h2>EcoPhone X</h2>
+                    <p>
+                        Smartphone conçu avec des matériaux recyclés
+                        et une batterie longue durée.
+                    </p>
+                    <div class="rating">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                    </div>
+                    <div class="price">
+                        <span class="old-price"> 599 € </span>
+                        <span class="new-price"> 499 € </span>
+                    </div>
+                    <div class="buttons">
+                        <button> <i class="ri-shopping-cart-line"></i> Ajouter </button>
+                        <button><i class="ri-heart-line"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ================= CARD 2 ================= -->
+            <article class="card">
+                <span class="badge promo">-20%</span>
+                <img src="images/tshirt.jpg" alt="T-shirt écologique">
+                <div class="card-content">
+                    <h2>T-shirt Bio</h2>
+                    <p>
+                        T-shirt fabriqué en coton biologique
+                        certifié.
+                    </p>
+
+                    <div class="rating">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                    </div>
+                    <div class="price">
+                        <span class="old-price"> 35 € </span>
+                        <span class="new-price"> 28 € </span>
+                    </div>
+                    <div class="buttons">
+                        <button><i class="ri-shopping-cart-line"></i> Ajouter</button>
+                        <button><i class="ri-heart-line"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ================= CARD 3 ================= -->
+            <article class="card">
+                <span class="badge stock"> Nouveau</span>
+                <img src="images/book.jpg" alt="Livre sur le recyclage">
+                <div class="card-content">
+                    <h2>Guide du Recyclage</h2>
+                    <p>
+                        Découvrez toutes les bonnes pratiques
+                        pour protéger l'environnement.
+                    </p>
+                    <div class="rating">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <div class="price">
+                        <span class="new-price">18 € </span>
+                    </div>
+                    <div class="buttons">
+                        <button><i class="ri-shopping-cart-line"></i> Ajouter</button>
+                        <button><i class="ri-heart-line"></i></button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>
+            © 2026 GreenShop • Tous droits réservés
+        </p>
+    </footer>
 </body>
 </html>
